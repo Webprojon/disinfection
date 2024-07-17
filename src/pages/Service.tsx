@@ -33,7 +33,7 @@ export default function Service() {
 		},
 	];
 	return (
-		<section id="serv" className="scroll-mt-40">
+		<section id="serv" className="scroll-mt-24 lg:scroll-mt-40">
 			<SectionHeading>{t("service_heading")}</SectionHeading>
 			<p className="text-[#666] text-lg mt-2">{t("service_text")}</p>
 

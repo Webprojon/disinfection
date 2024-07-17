@@ -29,7 +29,7 @@ export default function FaqPage() {
 		},
 	];
 	return (
-		<section id="faq" className="scroll-mt-40">
+		<section id="faq" className="scroll-mt-24 lg:scroll-mt-40">
 			<div className="border-t border-black/30"></div>
 
 			<div className="lg:flex justify-between lg:h-[45vh] md:mt-8">

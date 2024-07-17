@@ -10,13 +10,12 @@ import TypeOfServices from "./pages/TypeOfServices";
 
 function App() {
 	return (
-		<main className="border">
+		<main>
 			<Toaster position="top-center" reverseOrder={false} />
 			<Header />
-			<div className="px-4">
+			<div className="px-4 overflow-x-hidden">
 				<Home />
 				<About />
-				
 				<Service />
 				<TypeOfServices />
 				<FaqPage />

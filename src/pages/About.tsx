@@ -34,7 +34,7 @@ export default function About() {
 	];
 
 	return (
-		<section id="about" className="scroll-mt-40">
+		<section id="about" className="scroll-mt-24 lg:scroll-mt-40">
 			<SectionHeading>{t("about_heading")}</SectionHeading>
 			<div className="border-t mt-4 border-black/30"></div>
 

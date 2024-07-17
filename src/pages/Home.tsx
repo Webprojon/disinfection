@@ -12,7 +12,7 @@ export default function Home() {
 		AOS.init({});
 	}, []);
 	return (
-		<section id="main" className="scroll-mt-40 mt-[.2rem] md:mt-[5rem]">
+		<section id="main" className="scroll-mt-40">
 			<div className="relative md:flex justify-between">
 				<div className="relative z-10 w-full h-[50vh] sm:h-[65vh] bg-black/40 p-4 rounded-[15px] md:bg-transparent md:w-[700px] lg:mt-10">
 					<h1 className="animate__animated animate__bounceInLeft text-white text-[45px] sm:text-[60px] leading-[3rem] md:text-[#3360FF] lg:text-[95px] md:leading-[4rem] lg:leading-[6rem] font-semibold">
