@@ -1,13 +1,14 @@
 import { useState } from "react";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
-import toast from "react-hot-toast";
+import { useGlobalContext } from "../context/global-context";
 
 export default function Form() {
 	const [nameValue, setNameValue] = useState("");
 	const [phoneValue, setPhoneValue] = useState("");
 	const [loading, setLoading] = useState(false);
 	const { t } = useTranslation();
+	const { isModal, setIsModal, setUserName } = useGlobalContext();
 
 	const SendMessage = (event: React.FormEvent<HTMLFormElement>) => {
 		setLoading(true);
@@ -28,43 +29,46 @@ export default function Form() {
 		})
 			.then(() => {
 				setTimeout(() => {
-					toast.success(`Hi ${nameValue} ! \n We got your data, Thank you 😊`);
+					setIsModal(!isModal);
+					setUserName(nameValue);
 				}, 1000);
 				setNameValue("");
 				setPhoneValue("");
 			})
-			.catch(() => toast.error("Sorry, an error occured"))
+			.catch((error) => console.log(error))
 			.finally(() => {
 				setLoading(false);
 			});
 	};
 
 	return (
-		<form onSubmit={SendMessage} className="flex gap-y-6 flex-col mt-8">
-			<input
-				required
-				type="text"
-				value={nameValue}
-				autoComplete="off"
-				placeholder={t("form_name")}
-				onChange={(e) => setNameValue(e.target.value)}
-				className="rounded-md bg-black/5 px-3 py-[.6rem]"
-			/>
-			<input
-				required
-				type="number"
-				value={phoneValue}
-				autoComplete="off"
-				placeholder="+998-90-123-45-67"
-				onChange={(e) => setPhoneValue(e.target.value)}
-				className="rounded-md bg-black/5 px-3 py-[.6rem]"
-			/>
-			<button
-				type="submit"
-				className="mt-4 rounded-md bg-black/80 text-white font-bold py-[.6rem]"
-			>
-				{loading ? "Sending" : t("form_btn")}
-			</button>
-		</form>
+		<div>
+			<form onSubmit={SendMessage} className="flex gap-y-6 flex-col mt-8">
+				<input
+					required
+					type="text"
+					value={nameValue}
+					autoComplete="off"
+					placeholder={t("form_name")}
+					onChange={(e) => setNameValue(e.target.value)}
+					className="rounded-md bg-black/5 px-3 py-[.6rem]"
+				/>
+				<input
+					required
+					type="number"
+					value={phoneValue}
+					autoComplete="off"
+					placeholder="+998-90-123-45-67"
+					onChange={(e) => setPhoneValue(e.target.value)}
+					className="rounded-md bg-black/5 px-3 py-[.6rem]"
+				/>
+				<button
+					type="submit"
+					className="mt-4 rounded-md bg-black/80 text-white font-bold py-[.6rem]"
+				>
+					{loading ? "Sending" : t("form_btn")}
+				</button>
+			</form>
+		</div>
 	);
 }

@@ -4,18 +4,23 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
 import Button from "../components/Button";
+import { useGlobalContext } from "../context/global-context";
+import Modal from "../components/Modal";
 
 export default function Home() {
 	const { t } = useTranslation();
+	const { isModal } = useGlobalContext();
 
 	useEffect(() => {
 		AOS.init({});
 	}, []);
 	return (
 		<section id="main" className="scroll-mt-40 mt-4 lg:mt-6">
+			{isModal ? <Modal /> : ""}
+
 			<div className="relative lg:flex items-start justify-between">
 				<div
-					className="relative z-10 w-full h-[50vh] sm:h-[55vh] md:h-[50vh] bg-black/50 p-4 md:p-7 lg:p-0 md:text-center lg:text-left rounded-[15px] 
+					className="relative z-10 w-full h-[40vh] sm:h-[55vh] md:h-[50vh] bg-black/50 p-4 md:p-7 lg:p-0 md:text-center lg:text-left rounded-[15px] 
 				lg:bg-transparent lg:w-[700px]"
 				>
 					<h1
@@ -35,7 +40,7 @@ export default function Home() {
 						<img src={handImg} alt="img" className="hidden lg:block" />
 					</div>
 
-					<div className="mt-5 md:mt-10 lg:mt-6">
+					<div className="mt-7 md:mt-10 lg:mt-6">
 						<Button />
 					</div>
 				</div>
@@ -44,7 +49,7 @@ export default function Home() {
 					<img
 						alt="dezinfeksiyatashkent hero img"
 						src="https://www.dezinfeksiyatashkent.uz/assets/hero-9df3d259.jpg"
-						className="rounded-[15px] w-full sm:h-[55vh] h-[50vh] md:h-full"
+						className="rounded-[15px] w-full h-[40vh] sm:h-[55vh] md:h-full"
 					/>
 				</div>
 			</div>

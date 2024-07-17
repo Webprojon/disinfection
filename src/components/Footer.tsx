@@ -14,7 +14,7 @@ export default function Footer() {
 	const { t } = useTranslation();
 
 	return (
-		<footer className="border-t border-black/20 lg:h-[30vh] lg:flex items-start">
+		<footer className="border-t border-black/20 md:h-[35vh] lg:h-[30vh] lg:flex items-start">
 			<div className="md:flex md:gap-x-[3rem] lg:gap-x-[7rem] ml-4 mt-10">
 				<Logo />
 				<div className="my-10">

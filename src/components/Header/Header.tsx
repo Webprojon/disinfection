@@ -54,7 +54,7 @@ export default function Header() {
 		<header
 			className={`${
 				isShadow ? "shadow-bottom" : ""
-			} sticky top-0 h-[10vh] bg-white flex z-30 items-center justify-between lg:h-[15vh] md:px-2 lg:px-4`}
+			} sticky top-0 h-[10vh] bg-white flex z-30 items-center justify-between lg:h-[15vh] px-2 lg:px-4`}
 		>
 			<Logo />
 
@@ -65,7 +65,7 @@ export default function Header() {
 
 				<IoIosMenu
 					onClick={handleVisible}
-					className="size-10 md:size-14 block lg:hidden"
+					className="size-12 md:size-14 block lg:hidden"
 				/>
 			</div>
 
@@ -76,7 +76,7 @@ export default function Header() {
 			></div>
 
 			<nav
-				className={`fixed top-0 right-0 w-[17rem] sm:w-[20rem] md:w-[24rem] h-screen bg-white transition-transform duration-300 shadow-left 
+				className={`fixed top-0 right-0 w-[18rem] sm:w-[20rem] md:w-[24rem] h-screen bg-white transition-transform duration-300 shadow-left 
 					md:shadow-none lg:relative lg:flex lg:items-center lg:gap-x-[5rem] lg:place-content-end lg:h-full lg:w-[60rem] lg:translate-x-0
 					${isVisible ? "translate-x-0" : "translate-x-full"}`}
 			>
@@ -85,7 +85,8 @@ export default function Header() {
 					className="absolute top-7 right-5 size-7 md:size-9 block lg:hidden"
 				/>
 				<ul
-					className="flex flex-col gap-y-6 font-bold mt-[6rem] mx-8 tracking-[3px] lg:m-0 lg:items-center lg:flex-row lg:gap-x-6 lg:font-medium lg:text-xl md:tracking-wider  
+					className="flex flex-col gap-y-6 font-bold mt-[6rem] mx-8 tracking-[3px] lg:m-0 text-lg lg:items-center lg:flex-row lg:gap-x-6 lg:font-medium 
+					lg:text-xl md:tracking-wider  
 			 text-[#666666] md:text-[24px]"
 				>
 					{links.map((link) => (

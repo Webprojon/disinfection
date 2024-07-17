@@ -66,7 +66,7 @@ export default function FaqPage() {
 
 			<div
 				id="contact"
-				className="scroll-mt-28 md:relative p-5 md:0 my-[3rem] md:my-[6rem] h-[47vh] md:h-[40vh] lg:h-[75vh] rounded-[15px] second-custom-gradient"
+				className="scroll-mt-28 md:relative p-5 md:0 my-[3rem] md:my-[6rem] h-[49vh] md:h-[40vh] lg:h-[75vh] rounded-[15px] second-custom-gradient"
 			>
 				<div
 					className="md:absolute md:w-[450px] lg:w-[450px] mx-auto mt-[11rem] md:m-0 lg:mt-0 md:left-1/2 lg:left-[30%] top-1/2 md:-translate-x-1/2 -translate-y-1/2 px-[1rem] 
