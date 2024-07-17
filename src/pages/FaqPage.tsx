@@ -2,6 +2,7 @@ import { useState } from "react";
 import { IoChevronDownOutline } from "react-icons/io5";
 import Form from "../components/Form";
 import { useTranslation } from "react-i18next";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function FaqPage() {
 	const [toggle, setToggle] = useState<number | null>(null);
@@ -66,11 +67,11 @@ export default function FaqPage() {
 
 			<div
 				id="contact"
-				className="scroll-mt-10 lg:relative p-5 my-[3rem] md:my-[6rem] h-[65vh] lg:h-[75vh] rounded-[15px] second-custom-gradient"
+				className="scroll-mt-28 lg:relative p-5 my-[3rem] md:my-[6rem] h-[65vh] lg:h-[75vh] rounded-[15px] second-custom-gradient"
 			>
 				<div
 					className="lg:absolute md:w-[500px] lg:w-[450px] mx-auto mt-[12rem] lg:mt-0 left-[14%] top-[50%] -translate-y-1/2 px-[1rem] 
-				py-[1.2rem] bg-white rounded-[10px]"
+					py-[1.2rem] bg-white rounded-[10px]"
 				>
 					<h2 className="text-[32px] font-bold leading-9">{t("faq_h2")}</h2>
 					<Form />

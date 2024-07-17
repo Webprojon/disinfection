@@ -1,6 +1,7 @@
 import { ReactNode, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 type ChildrenProps = {
 	children: ReactNode;
@@ -14,11 +15,10 @@ export default function SectionHeading({ children }: ChildrenProps) {
 	}, []);
 
 	return (
-		<h2
-			data-aos="flip-up"
-			className="mt-[6rem] font-bold text-[40px] tracking-wider"
-		>
-			{children}
-		</h2>
+		<AnimationOnScroll animateIn="animate__animated animate__flipInX">
+			<h2 className="mt-[6rem] font-bold text-[40px] tracking-wider">
+				{children}
+			</h2>
+		</AnimationOnScroll>
 	);
 }

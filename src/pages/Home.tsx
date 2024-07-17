@@ -26,7 +26,7 @@ export default function Home() {
 						<img src={handImg} alt="img" className="hidden lg:block" />
 					</div>
 
-					<div data-aos="fade-right" className="mt-5">
+					<div className="mt-5">
 						<Button />
 					</div>
 				</div>

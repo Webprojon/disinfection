@@ -69,13 +69,13 @@ export default function Header() {
 			</div>
 
 			<div
-				className={`fixed left-0 top-0 bottom-0 bg-black/20 w-full h-screen duration-300 lg:hidden  ${
+				className={`fixed left-0 top-0 bottom-0 bg-black/20 w-full h-screen duration-900 lg:hidden  ${
 					isVisible ? "block" : "hidden"
 				}`}
 			></div>
 
 			<nav
-				className={`fixed top-0 right-0 w-[17rem] sm:w-[20rem] md:w-[24rem] h-screen bg-white transition-transform duration-200 shadow-left 
+				className={`fixed top-0 right-0 w-[17rem] sm:w-[20rem] md:w-[24rem] h-screen bg-white transition-transform duration-300 shadow-left 
 					md:shadow-none lg:relative lg:flex lg:items-center lg:gap-x-[5rem] lg:place-content-end lg:h-full lg:w-[60rem] lg:translate-x-0
 					${isVisible ? "translate-x-0" : "translate-x-full"}`}
 			>

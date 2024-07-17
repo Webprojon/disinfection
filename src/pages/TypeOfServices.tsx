@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Button from "../components/Button";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function TypeOfServices() {
 	useEffect(() => {
@@ -51,20 +52,26 @@ export default function TypeOfServices() {
 				className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mb-5"
 			>
 				{insects.map(({ title, description, img }) => (
-					<div
-						key={title}
-						className="flex flex-col justify-between bg-slate-100 rounded-[15px] p-5"
-					>
-						<h2 className="font-bold text-[28px] md:text-[32px]">{title}</h2>
-						<p className="font-medium text-lg leading-[1.2rem] md:leading-[1.4rem] pt-4 text-black/70">
-							{description}
-						</p>
+					<AnimationOnScroll animateIn="animate__animated animate__bounceInLeft ">
+						<div
+							key={title}
+							className="flex flex-col justify-between bg-slate-100 rounded-[15px] p-5"
+						>
+							<h2 className="font-bold text-[28px] md:text-[32px]">{title}</h2>
+							<p className="font-medium text-lg leading-[1.2rem] md:leading-[1.4rem] pt-4 text-black/70">
+								{description}
+							</p>
 
-						<div className="flex items-end justify-between mt-16 lg:mt-20">
-							<Button />
-							<img alt="КЛАПАЛАР" className="w-[8rem] rounded-full" src={img} />
+							<div className="flex items-end justify-between mt-16 lg:mt-20">
+								<Button />
+								<img
+									alt="КЛАПАЛАР"
+									className="w-[8rem] rounded-full"
+									src={img}
+								/>
+							</div>
 						</div>
-					</div>
+					</AnimationOnScroll>
 				))}
 			</div>
 
@@ -77,23 +84,24 @@ export default function TypeOfServices() {
 				/>
 
 				<div className="lg:w-[550px]">
-					<img
-						data-aos="fade-right"
-						data-aos-delay="200"
-						src="https://www.dezinfeksiyatashkent.uz/assets/d3icons-b8f1c170.svg"
-						alt="tick img"
-					/>
-					<h2
-						data-aos="fade-right"
-						data-aos-delay="400"
-						className="mt-2 text-[26px] md:text-[34px] leading-[2.9rem] md:leading-[3.2rem] font-bold text-white"
-					>
-						{t("typeof_service_h2")}
-					</h2>
+					<AnimationOnScroll animateIn="animate__animated animate__bounceInLeft">
+						<img
+							src="https://www.dezinfeksiyatashkent.uz/assets/d3icons-b8f1c170.svg"
+							alt="tick img"
+						/>
+					</AnimationOnScroll>
 
-					<div data-aos="fade-right" data-aos-delay="600" className="mt-10">
-						<Button />
-					</div>
+					<AnimationOnScroll animateIn="animate__animated animate__bounceInLeft">
+						<h2 className="mt-2 text-[26px] md:text-[34px] leading-[2.9rem] md:leading-[3.2rem] font-bold text-white">
+							{t("typeof_service_h2")}
+						</h2>
+					</AnimationOnScroll>
+
+					<AnimationOnScroll animateIn="animate__animated animate__bounceInLeft">
+						<div className="mt-10">
+							<Button />
+						</div>
+					</AnimationOnScroll>
 				</div>
 			</div>
 		</section>

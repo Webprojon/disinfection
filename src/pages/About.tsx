@@ -8,6 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
 import Button from "../components/Button";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function About() {
 	useEffect(() => {
@@ -37,19 +38,20 @@ export default function About() {
 		<section id="about" className="scroll-mt-24 lg:scroll-mt-40">
 			<SectionHeading>{t("about_heading")}</SectionHeading>
 			<div className="border-t mt-4 border-black/30"></div>
-
 			<div className="mt-10 mb-16 grid grid-cols-1 gap-y-5 md:grid-cols-2 lg:grid-cols-3">
 				{items.map(({ icon, title, description }) => (
-					<div
-						key={title}
-						className="animate__animated animate__bounceInLeft border-2 md:border-none rounded-lg p-4 md:bottom-0 lg:w-[340px] flex flex-col justify-center"
-					>
-						{icon}
-						<h2 className="font-bold text-[28px] leading-9 my-3">{title}</h2>
-						<p className="font-medium text-[#666666] leading-7">
-							{description}
-						</p>
-					</div>
+					<AnimationOnScroll animateIn="animate__animated animate__bounceInLeft ">
+						<div
+							key={title}
+							className="border-2 md:border-none rounded-lg p-4 md:bottom-0 lg:w-[340px] flex flex-col justify-center"
+						>
+							{icon}
+							<h2 className="font-bold text-[28px] leading-9 my-3">{title}</h2>
+							<p className="font-medium text-[#666666] leading-7">
+								{description}
+							</p>
+						</div>
+					</AnimationOnScroll>
 				))}
 			</div>
 
@@ -61,19 +63,21 @@ export default function About() {
 				/>
 				<div className="relative h-[70vh] lg:h-[80vh] flex flex-col justify-center items-end z-10 bg-black/40 p-4 rounded-[20px]">
 					<div className="md:absolute right-[19rem] top-[7rem] text-white md:w-[430px]">
-						<h2
-							data-aos="fade-left"
-							data-aos-delay="100"
-							className="text-[32px] md:text-[43px] font-bold md:leading-[3rem] tracking-wider"
-						>
-							{t("about_h2")}
-						</h2>
-						<p data-aos="fade-left" data-aos-delay="300" className="mt-4">
-							{t("about_p")}
-						</p>
-						<div data-aos="fade-left" data-aos-delay="500" className="mt-12">
-							<Button />
-						</div>
+						<AnimationOnScroll animateIn="animate__animated animate__bounceInRight ">
+							<h2 className="text-[32px] md:text-[43px] font-bold md:leading-[3rem] tracking-wider">
+								{t("about_h2")}
+							</h2>
+						</AnimationOnScroll>
+
+						<AnimationOnScroll animateIn="animate__animated animate__bounceInRight ">
+							<p className="mt-4">{t("about_p")}</p>
+						</AnimationOnScroll>
+
+						<AnimationOnScroll animateIn="animate__animated animate__bounceInRight ">
+							<div className="mt-12">
+								<Button />
+							</div>
+						</AnimationOnScroll>
 					</div>
 				</div>
 			</div>

@@ -2,6 +2,7 @@ import SectionHeading from "../components/SectionHeading";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { useTranslation } from "react-i18next";
 
 export default function Service() {
@@ -39,25 +40,27 @@ export default function Service() {
 
 			<div className="flex flex-col gap-y-7 my-10">
 				{contents.map(({ title, description, imgUrl }) => (
-					<div
-						key={title}
-						data-aos="fade-right"
-						className="md:flex items-center md:gap-x-12 lg:gap-x-[7rem] border-2 border-gray-400 p-5 lg:px-16 lg:py-5 rounded-[20px]"
-					>
-						<img
-							alt="insects"
-							className="w-[170px] md:w-[260px] mx-auto"
-							src={imgUrl}
-						/>
-						<div>
-							<h2 className="text-[22px] md:text-[30px] text-black/70 lg:text-[36px] leading-9 mt-8 md:leading-10 font-bold">
-								{title}
-							</h2>
-							<p className="font-medium pt-4 leading-5 text-[#666]">
-								{description}
-							</p>
+					<AnimationOnScroll animateIn="animate__animated animate__bounceInLeft ">
+						<div
+							key={title}
+							data-aos="fade-right"
+							className="md:flex items-center md:gap-x-12 lg:gap-x-[7rem] border-2 border-gray-400 p-5 lg:px-16 lg:py-5 rounded-[20px]"
+						>
+							<img
+								alt="insects"
+								className="w-[170px] md:w-[260px] mx-auto"
+								src={imgUrl}
+							/>
+							<div>
+								<h2 className="text-[22px] md:text-[30px] text-black/70 lg:text-[36px] leading-9 mt-8 md:leading-10 font-bold">
+									{title}
+								</h2>
+								<p className="font-medium pt-4 leading-5 text-[#666]">
+									{description}
+								</p>
+							</div>
 						</div>
-					</div>
+					</AnimationOnScroll>
 				))}
 			</div>
 		</section>
