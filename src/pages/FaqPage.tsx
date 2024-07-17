@@ -66,10 +66,10 @@ export default function FaqPage() {
 
 			<div
 				id="contact"
-				className="scroll-mt-28 lg:relative p-5 my-[3rem] md:my-[6rem] h-[65vh] lg:h-[75vh] rounded-[15px] second-custom-gradient"
+				className="scroll-mt-28 md:relative p-5 md:0 my-[3rem] md:my-[6rem] h-[47vh] md:h-[40vh] lg:h-[75vh] rounded-[15px] second-custom-gradient"
 			>
 				<div
-					className="lg:absolute md:w-[500px] lg:w-[450px] mx-auto mt-[12rem] lg:mt-0 left-[14%] top-[50%] -translate-y-1/2 px-[1rem] 
+					className="md:absolute md:w-[450px] lg:w-[450px] mx-auto mt-[11rem] md:m-0 lg:mt-0 md:left-1/2 lg:left-[30%] top-1/2 md:-translate-x-1/2 -translate-y-1/2 px-[1rem] 
 					py-[1.2rem] bg-white rounded-[10px]"
 				>
 					<h2 className="text-[32px] font-bold leading-9">{t("faq_h2")}</h2>

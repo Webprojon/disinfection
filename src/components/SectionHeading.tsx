@@ -16,7 +16,7 @@ export default function SectionHeading({ children }: ChildrenProps) {
 
 	return (
 		<AnimationOnScroll animateIn="animate__animated animate__flipInX">
-			<h2 className="mt-[6rem] font-bold text-[40px] tracking-wider">
+			<h2 className="mt-[2.7rem] lg:mt-[4rem] font-bold text-[40px] tracking-wider">
 				{children}
 			</h2>
 		</AnimationOnScroll>

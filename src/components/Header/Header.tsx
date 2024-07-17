@@ -9,6 +9,7 @@ import Button from "../Button";
 export default function Header() {
 	const [isVisible, setIsVisible] = useState<boolean>(false);
 	const [isShadow, setIsShadow] = useState(false);
+	const [activeSection, setActiveSection] = useState("Асосий");
 	const { t } = useTranslation();
 
 	const links = [
@@ -53,7 +54,7 @@ export default function Header() {
 		<header
 			className={`${
 				isShadow ? "shadow-bottom" : ""
-			} sticky top-0 h-[13vh] bg-white flex z-30 items-center justify-between md:h-[15vh] md:px-2 lg:px-4`}
+			} sticky top-0 h-[10vh] bg-white flex z-30 items-center justify-between lg:h-[15vh] md:px-2 lg:px-4`}
 		>
 			<Logo />
 
@@ -64,7 +65,7 @@ export default function Header() {
 
 				<IoIosMenu
 					onClick={handleVisible}
-					className="size-10 md:size-12 block lg:hidden"
+					className="size-10 md:size-14 block lg:hidden"
 				/>
 			</div>
 
@@ -88,7 +89,17 @@ export default function Header() {
 			 text-[#666666] md:text-[24px]"
 				>
 					{links.map((link) => (
-						<li key={link.hash} onClick={handleVisible}>
+						<li
+							key={link.hash}
+							onClick={() => {
+								handleVisible();
+								setActiveSection(link.name);
+							}}
+							className={`${
+								activeSection === link.name &&
+								"border-b-2 border-[#3360FF] opacity-90"
+							} hover:opacity-90 transition-all h-8 md:h-12 lg:h-8`}
+						>
 							<a href={link.hash}>{link.name}</a>
 						</li>
 					))}
