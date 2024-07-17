@@ -2,7 +2,6 @@ import { useState } from "react";
 import { IoChevronDownOutline } from "react-icons/io5";
 import Form from "../components/Form";
 import { useTranslation } from "react-i18next";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function FaqPage() {
 	const [toggle, setToggle] = useState<number | null>(null);
