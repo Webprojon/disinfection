@@ -18,17 +18,21 @@ export default function About() {
 
 	const items = [
 		{
-			icon: <AiOutlineThunderbolt className="size-14 mb-3 text-[#3360FF]" />,
+			icon: (
+				<AiOutlineThunderbolt className="size-10 xs:size-14 xs:mb-3 text-[#3360FF]" />
+			),
 			title: t("about_card1.title"),
 			description: t("about_card1.description"),
 		},
 		{
-			icon: <PiMedal className="size-14 mb-3 text-[#3360FF]" />,
+			icon: <PiMedal className="size-10 xs:size-14 xs:mb-3 text-[#3360FF]" />,
 			title: t("about_card2.title"),
 			description: t("about_card2.description"),
 		},
 		{
-			icon: <MdOutlineHandshake className="size-16 mb-3 text-[#3360FF]" />,
+			icon: (
+				<MdOutlineHandshake className="size-10 xs:size-14 xs:mb-3 text-[#3360FF]" />
+			),
 			title: t("about_card3.title"),
 			description: t("about_card3.description"),
 		},
@@ -43,11 +47,13 @@ export default function About() {
 					<AnimationOnScroll animateIn="animate__animated animate__bounceInLeft">
 						<div
 							key={title}
-							className="border-2 lg:border-none rounded-lg p-4 md:bottom-0 lg:w-[340px] flex flex-col justify-center"
+							className="border-2 lg:border-none rounded-lg p-4 md:bottom-0 flex flex-col justify-center"
 						>
 							{icon}
-							<h2 className="font-bold text-[28px] leading-9 my-3">{title}</h2>
-							<p className="font-medium text-[#666666] leading-7">
+							<h2 className="font-bold text-[18px] xs:text-[28px] leading-9 my-3">
+								{title}
+							</h2>
+							<p className="font-medium text-[12px] xs:text-md md:text-[16px] text-[#666666] xs:leading-7">
 								{description}
 							</p>
 						</div>
@@ -55,26 +61,26 @@ export default function About() {
 				))}
 			</div>
 
-			<div className="relative h-[45vh] md:h-[40vh] lg:h-[80vh] mb-4">
+			<div className="relative xs:h-[41vh] md:h-[40vh] lg:h-[80vh] mb-4">
 				<img
 					src={bgImg}
 					alt="bg img"
 					className="w-full h-full object-cover rounded-[20px] absolute top-0 left-0 z-0"
 				/>
-				<div className="relative h-[45vh] md:h-[40vh] lg:h-[80vh] flex flex-col justify-center items-end z-10 bg-black/50 p-4 rounded-[20px]">
+				<div className="relative xs:h-[41vh] md:h-[40vh] lg:h-[80vh] flex flex-col justify-center items-end z-10 bg-black/50 p-4 rounded-[20px]">
 					<div className="lg:absolute right-[19rem] top-[7rem] text-white md:w-[430px]">
 						<AnimationOnScroll animateIn="animate__animated animate__bounceInRight">
-							<h2 className="text-[32px] md:text-[43px] font-bold md:leading-[3rem] tracking-wider">
+							<h2 className="text-[17px] xs:text-[24px] md:text-[43px] font-bold md:leading-[3rem] tracking-wider">
 								{t("about_h2")}
 							</h2>
 						</AnimationOnScroll>
 
 						<AnimationOnScroll animateIn="animate__animated animate__bounceInRight">
-							<p className="mt-4">{t("about_p")}</p>
+							<p className="text-sm xs:text-md mt-4">{t("about_p")}</p>
 						</AnimationOnScroll>
 
 						<AnimationOnScroll animateIn="animate__animated animate__bounceInRight">
-							<div className="mt-10">
+							<div className="mt-5 sm:mt-10">
 								<Button />
 							</div>
 						</AnimationOnScroll>

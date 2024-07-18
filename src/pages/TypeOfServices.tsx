@@ -57,16 +57,18 @@ export default function TypeOfServices() {
 							key={title}
 							className="flex flex-col justify-between bg-slate-100 rounded-[15px] p-5"
 						>
-							<h2 className="font-bold text-[28px] md:text-[32px]">{title}</h2>
-							<p className="font-medium text-lg leading-[1.2rem] md:leading-[1.4rem] pt-4 text-black/70">
+							<h2 className="font-bold xs:text-[28px] md:text-[32px]">
+								{title}
+							</h2>
+							<p className="font-medium xs:text-lg leading-[1.2rem] md:leading-[1.4rem] pt-4 text-black/70">
 								{description}
 							</p>
 
-							<div className="flex items-end justify-between mt-16 lg:mt-20">
+							<div className="flex items-end justify-between mt-8 lg:mt-20">
 								<Button />
 								<img
 									alt="КЛАПАЛАР"
-									className="w-[8rem] rounded-full"
+									className="w-[5rem] xs:w-[8rem] rounded-full"
 									src={img}
 								/>
 							</div>
@@ -92,7 +94,7 @@ export default function TypeOfServices() {
 					</AnimationOnScroll>
 
 					<AnimationOnScroll animateIn="animate__animated animate__bounceInLeft">
-						<h2 className="mt-2 text-[26px] md:text-[34px] leading-[2.9rem] md:leading-[3.2rem] font-bold text-white">
+						<h2 className="mt-2 xs:text-[26px] md:text-[34px] xs:leading-[2.9rem] md:leading-[3.2rem] font-bold text-white">
 							{t("typeof_service_h2")}
 						</h2>
 					</AnimationOnScroll>

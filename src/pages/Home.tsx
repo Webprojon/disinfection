@@ -15,17 +15,17 @@ export default function Home() {
 		AOS.init({});
 	}, []);
 	return (
-		<section id="main" className="scroll-mt-40 mt-4 lg:mt-6">
+		<section id="main" className="scroll-mt-24 lg:scroll-mt-40 mt-4 lg:mt-6">
 			{isModal ? <Modal /> : ""}
 
 			<div className="relative lg:flex items-start justify-between">
 				<div
-					className="relative z-10 w-full h-[40vh] sm:h-[55vh] md:h-[50vh] bg-black/50 p-4 md:p-7 lg:p-0 md:text-center lg:text-left rounded-[15px] 
+					className="relative z-10 w-full h-[39vh] xs:h-[40vh] sm:h-[55vh] md:h-[50vh] bg-black/50 p-4 md:p-7 lg:p-0 md:text-center lg:text-left rounded-[15px] 
 				lg:bg-transparent lg:w-[700px]"
 				>
 					<h1
-						className="animate__animated animate__bounceInLeft text-white text-[45px] sm:text-[60px] md:text-[90px] leading-[3rem] lg:text-[#3360FF]
-					 lg:text-[95px] md:leading-[5rem] lg:leading-[6rem] font-semibold"
+						className="animate__animated animate__bounceInLeft text-white text-[30px] xs:text-[35px] sm:text-[60px] md:text-[90px] leading-[2rem] lg:text-[#3360FF]
+						lg:text-[95px] md:leading-[5rem] lg:leading-[6rem] font-semibold"
 					>
 						{t("home_h2")}
 					</h1>
@@ -40,7 +40,7 @@ export default function Home() {
 						<img src={handImg} alt="img" className="hidden lg:block" />
 					</div>
 
-					<div className="mt-7 md:mt-10 lg:mt-6">
+					<div className="animate__animated animate__bounceInLeft mt-4 md:mt-10 lg:mt-6">
 						<Button />
 					</div>
 				</div>
@@ -49,7 +49,7 @@ export default function Home() {
 					<img
 						alt="dezinfeksiyatashkent hero img"
 						src="https://www.dezinfeksiyatashkent.uz/assets/hero-9df3d259.jpg"
-						className="rounded-[15px] w-full h-[40vh] sm:h-[55vh] md:h-full"
+						className="rounded-[15px] w-full h-[39vh] xs:h-[40vh] sm:h-[55vh] md:h-full"
 					/>
 				</div>
 			</div>

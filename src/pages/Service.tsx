@@ -36,7 +36,7 @@ export default function Service() {
 	return (
 		<section id="serv" className="scroll-mt-24 lg:scroll-mt-40">
 			<SectionHeading>{t("service_heading")}</SectionHeading>
-			<p className="text-[#666] text-lg mt-2">{t("service_text")}</p>
+			<p className="text-[#666] xs:text-lg sm:text-xl mt-2">{t("service_text")}</p>
 
 			<div className="flex flex-col gap-y-7 my-10">
 				{contents.map(({ title, description, imgUrl }) => (
@@ -48,11 +48,11 @@ export default function Service() {
 						>
 							<img
 								alt="insects"
-								className="w-[170px] md:w-[260px] mx-auto"
+								className="w-[150px] xs:w-[170px] md:w-[260px] mx-auto"
 								src={imgUrl}
 							/>
 							<div>
-								<h2 className="text-[22px] md:text-[30px] text-black/70 lg:text-[36px] leading-9 mt-8 md:leading-10 font-bold">
+								<h2 className="xs:text-[20px] md:text-[30px] text-black/70 lg:text-[36px] xs:leading-9 mt-8 md:leading-10 font-bold">
 									{title}
 								</h2>
 								<p className="font-medium pt-4 leading-5 text-[#666]">

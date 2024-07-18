@@ -5,6 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import LangSelect from "./LangSelect";
 import { useTranslation } from "react-i18next";
 import Button from "../Button";
+import { motion } from "framer-motion";
 
 export default function Header() {
 	const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -51,21 +52,23 @@ export default function Header() {
 	};
 
 	return (
-		<header
+		<motion.header
+			initial={{ y: -150, opacity: 0 }}
+			animate={{ y: 0, opacity: 1 }}
 			className={`${
 				isShadow ? "shadow-bottom" : ""
 			} sticky top-0 h-[10vh] bg-white flex z-30 items-center justify-between lg:h-[15vh] px-2 lg:px-4`}
 		>
 			<Logo />
 
-			<div className="flex items-center gap-x-6">
+			<div className="flex items-center gap-x-4 xs:gap-x-6">
 				<div className="block lg:hidden">
 					<LangSelect />
 				</div>
 
 				<IoIosMenu
 					onClick={handleVisible}
-					className="size-12 md:size-14 block lg:hidden"
+					className="size-8 xs:size-12 md:size-14 block lg:hidden"
 				/>
 			</div>
 
@@ -117,6 +120,6 @@ export default function Header() {
 					<Button />
 				</div>
 			</nav>
-		</header>
+		</motion.header>
 	);
 }
