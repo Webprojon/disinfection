@@ -19,10 +19,11 @@ export default function LangSelect() {
 			onChange={handlechange}
 			value={languages}
 			name="languagechanger"
-			className="font-bold text-[#666666] bg-transparent cursor-pointer border-2 border-[#666666] px-2 py-[4px] md:p-2 rounded-xl"
+			className="font-bold text-[#666666] bg-transparent cursor-pointer border-2 border-[#666666] px-2 py-[4px] rounded-xl md:p-2"
 		>
-			<option value="uz">Ўзбекча</option>
-			<option value="ru">Русский</option>
+			<option value="uz">Uzbek</option>
+			<option value="en">English</option>
+			<option value="ru">Russian</option>
 		</select>
 	);
 }

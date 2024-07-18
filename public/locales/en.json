@@ -1,0 +1,84 @@
+{
+	"header_link1": {
+		"Асосий": "Home"
+	},
+	"header_link2": {
+		"Биз ҳақимизда": "About us"
+	},
+	"header_link3": {
+		"Хизматлар": "Services"
+	},
+	"header_link4": {
+		"ФАҚ": "FAQ"
+	},
+	"btn": "Contact",
+	"home_h2": "Disinfection service",
+	"home_p": "We have been conducting professional disinfection work in Tashkent for 10 years, so we know how to get rid of pests for the first time.",
+	"about_heading": "About us",
+	"about_card1": {
+		"title": "Fast Service",
+		"description": "APPLICATIONS ARE ACCEPTED 24 HOURS A DAY. IF THE PROBLEM IS URGENT WE CAN GO IMMEDIATELY. HOWEVER, THE QUALITY REMAINS EXCELLENT."
+	},
+	"about_card2": {
+		"title": "Our specialists",
+		"description": "OUR BUSINESS EMPLOYEES TAKE CARE OF EVERYTHING: ACCOUNTING, READING, PREPARATION, REPAIR, FINAL CLEANING, VENTILATION AND CONTROL CHECK."
+	},
+	"about_card3": {
+		"title": "At your convenience",
+		"description": "CHOOSE A SUITABLE AND CONVENIENT TIME FOR YOU AND CONTACT US. WE GIVE YOU A GUARANTEED AND EFFECTIVE RESULT"
+	},
+	"about_h2": "Consider the valve and harmful insects no more !!!",
+	"about_p": "Our company has been operating for many years. Our customers are happy with us",
+	"service_heading": "Services",
+	"service_text": "We provide you with efficient and guaranteed service.",
+	"service_card1": {
+		"title": "Disinfection is the destruction of harmful microorganisms",
+		"description": "The main task of any disinfection is to destroy dangerous microorganisms that can cause infections and diseases. Disinfection measures clean the space from mold, virus, mildew and bacteria. The process cleans the environment of pathogenic organisms. If you feel bad, you may feel tired or weak for no reason."
+	},
+	"service_card2": {
+		"title": "Disinsection is the destruction of insects",
+		"description": "Many people first come across the word 'disinfestation' when they are looking for a way to get rid of their unwanted neighbors - bed bugs, cockroaches, ants and other insects. They themselves are harmless, and they are also known carriers of infection. Disinsection is the destruction of insects: mosquitoes, flies, bedbugs, cockroaches, moths, ticks, bark beetles, wood lice and other crawling and flying creatures."
+	},
+	"service_card3": {
+		"title": "Дератизатсия - кемирувчиларни йўқ қилиш.",
+		"description": "Deratization in Tashkent is a complex set of measures aimed at eliminating rodents. It is known that rodents are very tough creatures that can withstand various dangerous effects. Therefore, a number of methods should be used to eliminate them. Deratization is carried out in the places where rodents appear in the city of Tashkent: apartment buildings, warehouses, shops, catering establishments."
+	},
+	"typeof_service_heading": "Type Of Service",
+	"typeof_service_card1": {
+		"title": "BEDBUGS",
+		"description": "They live in beds, upholstered furniture, textiles, under door and window frames. They feed on the blood of humans and warm-blooded animals. Cause allergies and severe psychological discomfort..."
+	},
+	"typeof_service_card2": {
+		"title": "COCKROACHES",
+		"description": "They carry pathogens. They live in cracks, under baseboards, behind furniture, under bathrooms, under cabinets, etc. They feed on food, household waste, leather goods, and paper."
+	},
+	"typeof_service_card3": {
+		"title": "SCORPIONS",
+		"description": "Heat-loving creatures that feed on insects and arachnids. They can live in warehouses and houses, but are often found in wooden buildings..."
+	},
+	"typeof_service_card4": {
+		"title": "RODENTS",
+		"description": "The most common are rats and mice. They carry pathogens, work on all surfaces, create passages in walls and ceilings, reduce the reliability of the structure. They feed on food and household waste..."
+	},
+	"typeof_service_card5": {
+		"title": "FLEAS",
+		"description": "They enter the bodies of pets and move from neighbors. They live in soft furniture, bedding, carpets, soft toys, under baseboards, and in window and door frames. They feed on the blood of humans and animals. They cause diseases..."
+	},
+	"typeof_service_h2": "Official guarantee - 1 year. We serve individuals and legal entities. Services are licensed!!!",
+	"faq_h2": "Leave your information",
+	"faq_question1": {
+		"question": "How is pest control carried out?",
+		"answer": "Insecticides are turned into an aerosol fog using special equipment and penetrate the smallest gaps in wallpaper, walls, and between floorboards, potential 'hiding places' for invisible insects."
+	},
+	"faq_question2": {
+		"question": "Are the drugs you use dangerous?",
+		"answer": "The drugs are not dangerous for people, pets, and plants. However, the room should be ventilated for 40 minutes after treatment."
+	},
+	"faq_question3": {
+		"question": "Do I need to prepare my house for treatment in any way?",
+		"answer": "Basically, you need to isolate dishes and personal hygiene items. Pets should also be isolated during treatment. There is no need to move furniture or household appliances."
+	},
+	"form_name": "Your name",
+	"form_btn": "Send",
+	"footer_info": "Uzbekistan, Tashkent city"
+}

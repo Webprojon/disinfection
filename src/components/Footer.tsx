@@ -15,12 +15,12 @@ export default function Footer() {
 
 	return (
 		<footer className="border-t border-black/20 md:h-[35vh] lg:h-[30vh] lg:flex items-start">
-			<div className="md:flex md:gap-x-[3rem] lg:gap-x-[7rem] ml-4 mt-10">
+			<div className="ml-4 mt-10 md:flex md:gap-x-[3rem] lg:gap-x-[7rem]">
 				<Logo />
 				<div className="my-10">
 					<a
 						href="#"
-						className="text-sm xs:text-md font-medium text-gray-700 flex items-center gap-x-6"
+						className="text-sm font-medium text-gray-700 flex items-center gap-x-6 xs:text-md"
 					>
 						<div className="flex items-center justify-center w-9 h-9 border border-black/30 rounded-md">
 							<HiOutlineLocationMarker className="size-5 text-black" />
@@ -31,7 +31,7 @@ export default function Footer() {
 
 					<a
 						href="#"
-						className="text-sm xs:text-md font-medium text-gray-700 flex items-center gap-x-6 mt-6"
+						className="text-sm font-medium text-gray-700 flex items-center gap-x-6 mt-6 xs:text-md"
 					>
 						<div className="flex items-center justify-center w-9 h-9 border border-black/30 rounded-md">
 							<PiPhoneBold className="size-5 text-black" />

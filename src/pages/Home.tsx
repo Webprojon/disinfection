@@ -1,7 +1,4 @@
-import { useEffect } from "react";
 import handImg from "../assets/Images/Group 1000004543.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
 import Button from "../components/Button";
 import { useGlobalContext } from "../context/global-context";
@@ -10,30 +7,30 @@ import Modal from "../components/Modal";
 export default function Home() {
 	const { t } = useTranslation();
 	const { isModal } = useGlobalContext();
-
-	useEffect(() => {
-		AOS.init({});
-	}, []);
 	return (
-		<section id="main" className="scroll-mt-24 lg:scroll-mt-40 mt-4 lg:mt-6">
+		<section id="main" className="scroll-mt-24 mt-4 lg:scroll-mt-40 lg:mt-6">
 			{isModal ? <Modal /> : ""}
 
 			<div className="relative lg:flex items-start justify-between">
 				<div
-					className="relative z-10 w-full h-[39vh] xs:h-[40vh] sm:h-[55vh] md:h-[50vh] bg-black/50 p-4 md:p-7 lg:p-0 md:text-center lg:text-left rounded-[15px] 
-				lg:bg-transparent lg:w-[700px]"
+					className="relative z-10 w-full h-[45vh] bg-black/50 p-4 rounded-[15px] 
+				xs:h-[45vh] sm:h-[55vh]
+				md:text-center md:h-[50vh] md:p-7
+				lg:bg-transparent lg:w-[700px] lg:p-0 lg:text-left"
 				>
 					<h1
-						className="animate__animated animate__bounceInLeft text-white text-[30px] xs:text-[35px] sm:text-[60px] md:text-[90px] leading-[2rem] lg:text-[#3360FF]
-						lg:text-[95px] md:leading-[5rem] lg:leading-[6rem] font-semibold"
+						className="animate__animated animate__bounceInLeft font-semibold text-white text-[30px] leading-[2rem] lg:text-[#3360FF]
+						xs:text-[35px] sm:text-[60px]
+						md:text-[90px] md:leading-[5rem]
+						lg:text-[95px] lg:leading-[6rem]"
 					>
 						{t("home_h2")}
 					</h1>
 
 					<div className="flex">
 						<p
-							className="animate__animated animate__bounceInLeft text-white lg:text-[#666666] font-medium pt-4 lg:pt-10 text-sm md:text-xl 
-						tracking-wider md:pt-10 md:leading-8"
+							className="animate__animated animate__bounceInLeft text-white font-medium pt-4 text-sm tracking-wider 
+						md:text-xl md:pt-10 md:leading-8 lg:text-[#666666] lg:pt-10"
 						>
 							{t("home_p")}
 						</p>
@@ -45,11 +42,11 @@ export default function Home() {
 					</div>
 				</div>
 
-				<div className="w-full absolute top-0 left-0 lg:relative z-0 lg:w-[750px] md:h-[50vh] lg:h-[80vh]">
+				<div className="w-full absolute top-0 left-0 z-0 md:h-[50vh] lg:relative lg:w-[750px] lg:h-[80vh]">
 					<img
 						alt="dezinfeksiyatashkent hero img"
 						src="https://www.dezinfeksiyatashkent.uz/assets/hero-9df3d259.jpg"
-						className="rounded-[15px] w-full h-[39vh] xs:h-[40vh] sm:h-[55vh] md:h-full"
+						className="rounded-[15px] w-full h-[45vh] xs:h-[45vh] sm:h-[55vh] md:h-full"
 					/>
 				</div>
 			</div>

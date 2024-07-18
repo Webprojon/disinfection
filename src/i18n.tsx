@@ -2,6 +2,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import uzTranslation from "../public/locales/uz.json";
 import ruTranslation from "../public/locales/ru.json";
+import enTranslation from "../public/locales/en.json";
 import Backend from "i18next-http-backend";
 import languageDetector from "i18next-browser-languagedetector";
 
@@ -21,6 +22,7 @@ i18n
 		resources: {
 			uz: { translation: uzTranslation },
 			ru: { translation: ruTranslation },
+			en: { translation: enTranslation },
 		},
 	});
 

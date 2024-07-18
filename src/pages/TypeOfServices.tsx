@@ -1,17 +1,9 @@
 import SectionHeading from "../components/SectionHeading";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Button from "../components/Button";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function TypeOfServices() {
-	useEffect(() => {
-		AOS.init({
-			duration: 300,
-		});
-	}, []);
 	const { t } = useTranslation();
 
 	const insects = [
@@ -22,22 +14,22 @@ export default function TypeOfServices() {
 		},
 		{
 			title: t("typeof_service_card2.title"),
-			description: t("typeof_service_card1.description"),
+			description: t("typeof_service_card2.description"),
 			img: "https://www.dezinfeksiyatashkent.uz/assets/tarakan-d8b430bd.jpg",
 		},
 		{
 			title: t("typeof_service_card3.title"),
-			description: t("typeof_service_card1.description"),
+			description: t("typeof_service_card3.description"),
 			img: "https://www.dezinfeksiyatashkent.uz/assets/skarpion-6902a7a9.jpg",
 		},
 		{
 			title: t("typeof_service_card4.title"),
-			description: t("typeof_service_card1.description"),
+			description: t("typeof_service_card4.description"),
 			img: "https://www.dezinfeksiyatashkent.uz/assets/grizuni-de8c9315.jpg",
 		},
 		{
 			title: t("typeof_service_card5.title"),
-			description: t("typeof_service_card1.description"),
+			description: t("typeof_service_card5.description"),
 			img: "https://www.dezinfeksiyatashkent.uz/assets/bloxi-7e06d020.jpg",
 		},
 	];
@@ -45,22 +37,17 @@ export default function TypeOfServices() {
 		<section>
 			<SectionHeading>{t("typeof_service_heading")}</SectionHeading>
 
-			<div
-				data-aos="fade-right"
-				data-aos-delay="200"
-				data-aos-duration="500"
-				className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mb-5"
-			>
+			<div className="grid grid-cols-1 gap-8 mt-10 mb-5 md:grid-cols-2 lg:grid-cols-3">
 				{insects.map(({ title, description, img }) => (
 					<AnimationOnScroll animateIn="animate__animated animate__bounceInLeft ">
 						<div
 							key={title}
-							className="flex flex-col justify-between bg-slate-100 rounded-[15px] p-5"
+							className="flex flex-col justify-between bg-slate-100 rounded-[15px] p-6"
 						>
 							<h2 className="font-bold xs:text-[28px] md:text-[32px]">
 								{title}
 							</h2>
-							<p className="font-medium xs:text-lg leading-[1.2rem] md:leading-[1.4rem] pt-4 text-black/70">
+							<p className="font-medium leading-[1.2rem] pt-4 text-black/70 xs:text-lg md:leading-[1.4rem] lg:h-[18vh]">
 								{description}
 							</p>
 
@@ -68,7 +55,7 @@ export default function TypeOfServices() {
 								<Button />
 								<img
 									alt="КЛАПАЛАР"
-									className="w-[5rem] xs:w-[8rem] rounded-full"
+									className="w-[5rem] rounded-full xs:w-[8rem]"
 									src={img}
 								/>
 							</div>
@@ -77,13 +64,13 @@ export default function TypeOfServices() {
 				))}
 			</div>
 
-			<div className="p-5 my-[4rem] lg:h-[80vh] rounded-[15px] flex md:justify-center md:items-center gap-x-[8rem] first-custom-gradient">
-				<img
-					data-aos="fade-right"
-					alt="cleaner"
-					className="h-[70vh] rounded-[15px] hidden lg:block"
-					src="https://www.dezinfeksiyatashkent.uz/assets/cleanT-f1a5f564.jpg"
-				/>
+			<div className="first-custom-gradient p-5 my-[4rem] rounded-[15px] flex gap-x-[8rem] md:justify-center md:items-center lg:h-[80vh]">
+				<AnimationOnScroll animateIn="animate__animated animate__bounceInLeft ">
+					<img
+						className="h-[70vh] rounded-[15px] hidden lg:block"
+						src="https://www.dezinfeksiyatashkent.uz/assets/cleanT-f1a5f564.jpg"
+					/>
+				</AnimationOnScroll>
 
 				<div className="lg:w-[550px]">
 					<AnimationOnScroll animateIn="animate__animated animate__bounceInLeft">
@@ -94,7 +81,7 @@ export default function TypeOfServices() {
 					</AnimationOnScroll>
 
 					<AnimationOnScroll animateIn="animate__animated animate__bounceInLeft">
-						<h2 className="mt-2 xs:text-[26px] md:text-[34px] xs:leading-[2.9rem] md:leading-[3.2rem] font-bold text-white">
+						<h2 className="mt-2 font-bold text-white xs:text-[26px] xs:leading-[2.9rem] md:text-[34px] md:leading-[3.2rem]">
 							{t("typeof_service_h2")}
 						</h2>
 					</AnimationOnScroll>

@@ -10,12 +10,14 @@
 	);
 }
 
-.second-custom-gradient {
-	background: radial-gradient(
-		58.39% 328.01% at 51.32% 69.21%,
-		#3da0fc 0%,
-		rgba(2, 227, 214, 0.2) 100%
-	);
+@media (min-width: 768px) {
+	.second-custom-gradient {
+		background: radial-gradient(
+			58.39% 328.01% at 51.32% 69.21%,
+			#3da0fc 0%,
+			rgba(2, 227, 214, 0.2) 100%
+		);
+	}
 }
 
 html {
