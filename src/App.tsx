@@ -11,7 +11,7 @@ import TypeOfServices from "./pages/TypeOfServices";
 function App() {
 	return (
 		<GlobalContextProvider>
-			<main>
+			<main className="max-w-[1600px] mx-auto">
 				<Header />
 				<div className="px-4 overflow-x-hidden">
 					<Home />

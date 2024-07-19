@@ -64,7 +64,7 @@ export default function Form() {
 				/>
 				<button
 					type="submit"
-					className="mt-4 rounded-md bg-black/80 text-white font-bold py-[.6rem]"
+					className="bg-black/80 hover:bg-black/75 hover:scale-105 active:scale-100 transition-all mt-4 rounded-md text-white font-bold py-[.6rem]"
 				>
 					{loading ? "Sending" : t("form_btn")}
 				</button>

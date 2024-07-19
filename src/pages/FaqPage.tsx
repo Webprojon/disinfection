@@ -69,7 +69,7 @@ export default function FaqPage() {
 				className="scroll-mt-28 h-[30vh] md:relative md:p-5 md:0 md:my-[6rem] md:h-[40vh] lg:h-[75vh] rounded-[15px] second-custom-gradient"
 			>
 				<div
-					className="md:absolute bg-slate-100 sm:w-[450px] lg:w-[450px] mx-auto mt-[12rem] md:m-0 lg:mt-0 md:left-1/2 lg:left-[30%] top-1/2 md:-translate-x-1/2 -translate-y-1/2 px-[1rem] 
+					className="md:absolute bg-slate-100  sm:w-[450px] lg:w-[450px] mx-auto mt-[13rem] md:m-0 lg:mt-0 md:left-1/2 lg:left-[30%] top-1/2 md:-translate-x-1/2 -translate-y-1/2 px-[1rem] 
 					py-[1.2rem] md:bg-white rounded-[10px]"
 				>
 					<h2 className="text-[20px] xs:text-[32px] font-bold xs:leading-9">

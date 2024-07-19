@@ -64,7 +64,7 @@ export default function TypeOfServices() {
 				))}
 			</div>
 
-			<div className="first-custom-gradient p-5 my-[4rem] rounded-[15px] flex gap-x-[8rem] md:justify-center md:items-center lg:h-[80vh]">
+			<div className="first-custom-gradient p-5 my-[4rem] rounded-[15px] lg:flex gap-x-[8rem] justify-center items-center lg:h-[80vh]">
 				<AnimationOnScroll animateIn="animate__animated animate__bounceInLeft ">
 					<img
 						className="h-[70vh] rounded-[15px] hidden lg:block"
@@ -81,7 +81,7 @@ export default function TypeOfServices() {
 					</AnimationOnScroll>
 
 					<AnimationOnScroll animateIn="animate__animated animate__bounceInLeft">
-						<h2 className="mt-2 font-bold text-white xs:text-[26px] xs:leading-[2.9rem] md:text-[34px] md:leading-[3.2rem]">
+						<h2 className="mt-2 font-bold text-white xs:text-[24px] xs:leading-[2.5rem] md:text-[34px] md:leading-[3.2rem]">
 							{t("typeof_service_h2")}
 						</h2>
 					</AnimationOnScroll>
